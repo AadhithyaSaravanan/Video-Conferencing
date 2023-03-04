@@ -2,7 +2,7 @@
   "name": "react-sdk-example",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://lab.videosdk.live/react-rtc-demo/",
+  "homepage": "https://github.com/AadhithyaSaravanan/Video-Conferencing.git",
   "dependencies": {
     "@headlessui/react": "^1.4.1",
     "@heroicons/react": "^1.0.2",
@@ -28,13 +28,15 @@
     "tailwindcss": "^2.2.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "kill-start": "sudo kill -9 `sudo lsof -t -i:3000` && yarn start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build"
+    "eject": "react-scripts eject"
+   
+    
   },
   "eslintConfig": {
     "extends": [
